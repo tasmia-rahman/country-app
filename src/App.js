@@ -47,10 +47,12 @@ const App = () => {
 
   return (
     <div>
-      <h1>Country App</h1>
-      <Search onSearch={handleSearch} />
-      {isLoading && <h2>Loading...</h2>}
-      {error && <h2>{error.message}</h2>}
+      <div style={{textAlign: 'center'}}>
+        <h1>Country App</h1>
+        <Search onSearch={handleSearch} />
+        {isLoading && <h2>Loading...</h2>}
+        {error && <h2>{error.message}</h2>}
+      </div>
       {
         countries && <Countries countries={countries} onRemove={handleRemove} />
       }

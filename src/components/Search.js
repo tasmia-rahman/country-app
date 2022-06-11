@@ -12,7 +12,7 @@ const Search = (props) => {
       }, [searchCountry]) // eslint-disable-line react-hooks/exhaustive-deps
       
   return (
-    <div style={{textAlign: 'center'}}>
+    <div>
         <input type='text' placeholder='Search country...' value={searchCountry} onChange={handleChange} />
     </div>
   )
