@@ -9,7 +9,7 @@ const Search = (props) => {
 
     useEffect(() => {
         props.onSearch(searchCountry);
-      }, [searchCountry])
+      }, [searchCountry]) // eslint-disable-line react-hooks/exhaustive-deps
       
   return (
     <div style={{textAlign: 'center'}}>
