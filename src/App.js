@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './App.css'
 import Countries from './components/Countries'
-import Search from "./Search";
+import Search from "./components/Search";
 
 const App = () => {
   const url = "https://restcountries.com/v3.1/all";
